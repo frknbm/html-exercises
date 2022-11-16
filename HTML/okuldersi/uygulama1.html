@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" name="form1"  method="get" onsubmit="return validateform()">
+    <table border="2">
+     <tr><td>ad soyad:</td><td><input type="text" name="adsoyad" required></td></tr><br>
+    <tr><td>email:</td><td><input type="email" name="email" required></td></tr><br>
+    <tr><td>şifre:</td><td><input type="password" maxlength="20" size="5" required></td></tr>
+    <tr><td>şifre tekrar:</td><td><input type="password" size="5"maxlength="20" required></td></tr>
+    <tr><td>posta kodu:</td><td><input type="number"size="5"maxlength="20" required></td></tr>
+    <tr><td>şehir:</td><td><select name="iller" id="il2"required>
+        <option>istanbul</option><option>Ankara</option><option>tokat</option><option>aydın</option>izmir<option>uşak</option></select></td></tr>
+   <tr><td></td><td><input type="submit" value="kayıt ol"></td></tr>
+    </table>
+    </form>
+    <script type="text/javascript">
+        function validateForm() {
+        var adsoyad=document.forms['form1'][0].value;
+        var email=document.forms['form1'][1].value; 
+        var 
+
+        if (adsoyad==null ||adsoyad=="")
+         {
+          alert("İsim kısmı boş bırakılamaz");
+          return false;
+        }
+    
+        if (email==null || email=="")
+         {
+          alert("email kısmı boş bırakılamaz");
+          return false;
+         }
+       
+
+        }
+        </script>
+        
+
+
+</body>
+</html>
